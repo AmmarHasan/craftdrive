@@ -12,7 +12,7 @@ export class EmployeeService {
   constructor(private http: HttpClient) { }
 
   getAll() {
-    return this.http.get<Employee[]>(`${config.apiUrl}/employees`);
+    return this.http.get<Employee[]>(`${config.apiUrl}/employee`);
   }
 
   getById(id: String) {
