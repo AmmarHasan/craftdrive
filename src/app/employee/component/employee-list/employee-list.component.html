@@ -1,0 +1,10 @@
+<div>
+  <tbody *ngFor="let employee of employees$ | async">
+    <tr>
+      <td>{{employee.first_name}}</td>
+      <td>{{employee.last_name}}</td>
+      <td>{{employee.email}}</td>
+      <td>{{employee.phone}}</td>
+    </tr>
+  </tbody>
+</div>
