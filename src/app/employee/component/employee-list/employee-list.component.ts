@@ -10,7 +10,7 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./employee-list.component.scss']
 })
 export class EmployeeListComponent implements OnInit {
-  employees$: Observable<Employee> | Observable<Employee[]>
+  employees$:  Observable<Employee[]>
 
   constructor(
     private employeeService: EmployeeService,
